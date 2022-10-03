@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+     <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+   </head>
+    <link href="src/styles.css" />
+    <link rel="stylesheet" href="style.css">
+
+
+  </head>
+  <body>
+
+ <div class="container">
+      <div class="top" id="inputSpace">
+        <label for="cityInput" id="city-name">
+          Enter your city
+        </label>
+        <br />
+        <form id="enter-city">
+          <input type="text" name="city" id="city-input" />
+          <input type="submit" value="Search" id="searchButton" />
+        </form>
+        <div class="LocationFinder" id="curr-location">
+          <a href="#">Current location</a>
+        </div>
+      </div>
+
+
+ <div id="days">
+        <div class="fiveDays">
+          <div class="date"></div>
+           <div class="mainWeather">
+            The Day
+            <div class="mainTemp">
+              20°C 🌤️
+            </div>
+          </div>
+
+
+    
+        </br>
+
+<div class="card-group">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Night</h5>
+      <p class="card-text">
+      </p>
+      <p class="card-text">
+        <small class="text-muted">20 °C</small>
+      </p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Morning</h5>
+      <p class="card-text"> &#127784;
+          <div class="element">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 44.9 44.9" style="enable-background:new 0 0 44.9 44.9;" xml:space="preserve" height="40px" width="40px">
+                <g id="Sun">
+                  <circle id="XMLID_61_" class="yellow" cx="22.4" cy="22.6" r="11"/>
+                  <g>
+                    <path id="XMLID_60_" class="yellow" d="M22.6,8.1h-0.3c-0.3,0-0.6-0.3-0.6-0.6v-7c0-0.3,0.3-0.6,0.6-0.6l0.3,0c0.3,0,0.6,0.3,0.6,0.6 v7C23.2,7.8,22.9,8.1,22.6,8.1z"/>
+                    <path id="XMLID_59_" class="yellow" d="M22.6,36.8h-0.3c-0.3,0-0.6,0.3-0.6,0.6v7c0,0.3,0.3,0.6,0.6,0.6h0.3c0.3,0,0.6-0.3,0.6-0.6v-7 C23.2,37,22.9,36.8,22.6,36.8z"/>
+                    <path id="XMLID_58_" class="yellow" d="M8.1,22.3v0.3c0,0.3-0.3,0.6-0.6,0.6h-7c-0.3,0-0.6-0.3-0.6-0.6l0-0.3c0-0.3,0.3-0.6,0.6-0.6h7 C7.8,21.7,8.1,21.9,8.1,22.3z"/>
+                    <path id="XMLID_57_" class="yellow" d="M36.8,22.3v0.3c0,0.3,0.3,0.6,0.6,0.6h7c0.3,0,0.6-0.3,0.6-0.6v-0.3c0-0.3-0.3-0.6-0.6-0.6h-7 C37,21.7,36.8,21.9,36.8,22.3z"/>
+                    <path id="XMLID_56_" class="yellow" d="M11.4,31.6l0.2,0.3c0.2,0.2,0.2,0.6-0.1,0.8l-5.3,4.5c-0.2,0.2-0.6,0.2-0.8-0.1l-0.2-0.3 c-0.2-0.2-0.2-0.6,0.1-0.8l5.3-4.5C10.9,31.4,11.2,31.4,11.4,31.6z"/>
+                    <path id="XMLID_55_" class="yellow" d="M33.2,13l0.2,0.3c0.2,0.2,0.6,0.3,0.8,0.1l5.3-4.5c0.2-0.2,0.3-0.6,0.1-0.8l-0.2-0.3 c-0.2-0.2-0.6-0.3-0.8-0.1l-5.3,4.5C33,12.4,33,12.7,33.2,13z"/>
+                    <path id="XMLID_54_" class="yellow" d="M11.4,13.2l0.2-0.3c0.2-0.2,0.2-0.6-0.1-0.8L6.3,7.6C6.1,7.4,5.7,7.5,5.5,7.7L5.3,7.9 C5.1,8.2,5.1,8.5,5.4,8.7l5.3,4.5C10.9,13.5,11.2,13.5,11.4,13.2z"/>
+                    <path id="XMLID_53_" class="yellow" d="M33.2,31.9l0.2-0.3c0.2-0.2,0.6-0.3,0.8-0.1l5.3,4.5c0.2,0.2,0.3,0.6,0.1,0.8l-0.2,0.3 c-0.2,0.2-0.6,0.3-0.8,0.1l-5.3-4.5C33,32.5,33,32.1,33.2,31.9z"/>
+                    <animate attributeType="CSS"
+                      attributeName="opacity"
+                      attributeType="XML"
+                      dur="0.5s"
+                      keyTimes="0;0.5;1"
+                      repeatCount="indefinite"
+                      values="1;0.6;1"
+                      calcMode="linear"/>
+                  </g>
+                </g>
+              </svg>
+            </div>
+      </p>
+      <p class="card-text">
+        <small class="text-muted">22 °C</small>
+      </p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Afternoon</h5>
+      <p class="card-text">  	
+&#127780
+      </p>
+      <p class="card-text">
+        <small class="text-muted">25 °C</small>
+      </p>
+    </div>
+  </div>
+  <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Evening</h5>
+        <p class="card-text">
+          🌤
+        </p>
+        <p class="card-text">
+          <h4 class="text-muted">23 °C</h4>
+        </p>
+      </div>
+</div>
+</div>
+
+</br>
+</br>
+
+<div class="days">  
+<div class="container">
+      <div class="row">
+       <div class="col">
+<div class="card">
+      <div class="card-body">
+        <h5 class="card-title"> ⛈ Sunday</h5>
+        <p class="card-text"> 15/23°C</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+<div class="card">
+     <div class="card-body">
+       <h5 class="card-title">☁️Monday</h5>
+       <p class="card-text"> 20/28°C </p>
+     </div>
+   </div>
+   <div class="row">
+    <div class="col">
+<div class="card">
+   <div class="card-body">
+     <h5 class="card-title"> 🌧️Tuesday</h5>
+     <p class="card-text"> 15/23°C </p>
+   </div>
+ </div>
+ <div class="row">
+  <div class="col">
+<div class="card">
+ <div class="card-body">
+   <h5 class="card-title"> ⛅Wednesday </h5>
+   <p class="card-text"> 18/28°C </p>
+ </div>
+</div>
+<div class="row">
+  <div class="col">
+<div class="card">
+ <div class="card-body">
+   <h5 class="card-title">⛅Thursday</h5>
+   <p class="card-text"> 17/23°C</p>
+ </div>
+</div>
+</div>
+
+<script>
+    let now = new Date();
+let day = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday"
+];
+let hour = now.getHours();
+let minute = ("0" + now.getMinutes()).slice(-2);
+
+let todaysDate = document.querySelector(".date");
+todaysDate.innerHTML = `${day[now.getDay()]}, ${hour}:${minute}`;
+
+function showData(response) {
+  let newDegrees = document.querySelector(".mainTemp");
+  newDegrees.innerHTML = `${Math.round(response.data.main.temp)}°C`;
+  let locName = document.querySelector("#city-name");
+  locName.innerHTML = response.data.name;
+}
+
+function changeCity(event) {
+  event.preventDefault();
+  let newCity = document.querySelector("#city-input");
+  let changedCity = document.querySelector("#city-name");
+
+  if (newCity.value) {
+    changedCity.innerHTML = newCity.value;
+  } else {
+    changedCity.innerHTML = "Enter your city";
+  }
+  let apiKey = "93d43dfe3b4a950e5b187e5dc313705e";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${newCity.value}&appid=${apiKey}&units=metric`;
+
+  axios.get(apiUrl).then(showData);
+}
+
+let cityIn = document.querySelector("#enter-city");
+cityIn.addEventListener("submit", changeCity);
+
+function showPosition(position) {
+  let lat = position.coords.latitude;
+  let lon = position.coords.longitude;
+  console.log(lat);
+
+  let apiLocKey = "ca5af28648d86b7925348bb9fb85cd3a";
+  let apiUrlTwo = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiLocKey}&units=metric`;
+  axios.get(apiUrlTwo).then(showData);
+}
+
+function getPosition() {
+  navigator.geolocation.getCurrentPosition(showPosition);
+}
+
+let newLocation = document.querySelector("#curr-location");
+newLocation.addEventListener("click", getPosition);
+</script>
+
+
+    <script src="src/index.js"></script>
+ </body>
+</html>
+
