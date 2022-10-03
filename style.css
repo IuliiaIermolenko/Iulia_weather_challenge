@@ -109,4 +109,9 @@ p {
   flex-wrap: wrap;
 }
 
-    
+    .contact-btn
+    {
+        display: block;
+        margin: 0 auto;
+        width: 80px;
+    }
