@@ -40,7 +40,7 @@ function changeCity(event) {
 
 let cityIn = document.querySelector("#enter-city");
 cityIn.addEventListener("submit", changeCity);
-
+  
 function showPosition(position) {
   let lat = position.coords.latitude;
   let lon = position.coords.longitude;
