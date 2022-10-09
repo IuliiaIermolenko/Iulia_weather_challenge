@@ -1,8 +1,26 @@
 
-      body {
-  background-image: linear-gradient(to bottom, #57c1eb 0%, #246fa8 100%);
+  body {
+ 
+  background: linear-gradient(to right top, #0087fe, #1b81fa, #297bf5, #3475f1, #3d6fec);
   padding: 30px;
 }
+
+.date {
+     text-align: center;
+       
+}
+
+.mainWeather {
+    text-align: left;
+}
+
+
+.mainTemp {
+    text-align: center;
+}
+
+
+
 
 
 .celsius-link {
@@ -27,7 +45,7 @@ form {
 .container {
     font-family: "Roboto", sans-serif;
   color: #ffffff;
-  background: #528bf5;
+  background: linear-gradient(to bottom, #00ccff 0%, #3399ff 100%);;
   max-width: 600px;
   margin: 0 auto;
   padding: 30px 60px;
@@ -38,23 +56,25 @@ form {
 h1 {
   font-family: "Roboto", sans-serif;
   text-align: center;
-  color: #281069;
+  color: linear-gradient(to right top, #0087fe, #1b81fa, #297bf5, #3475f1, #3d6fec);
 }
 h2 {
   font-family: "Roboto", sans-serif;
   text-align: center;
-  color: #281069;
+  color: linear-gradient(to right top, #0087fe, #1b81fa, #297bf5, #3475f1, #3d6fec);
 }
 h5 {
   color: rgb(255, 255, 255);
-  font-weight: 700;
+  font-weight: 500;
   padding: 0 auto;
   text-align: center;
 }
 
 h4 {
     color: yellowgreen;
-
+  font-weight: 300;
+  padding: 0 auto;
+  text-align: center;
 }
 
 .weather-temperature {
@@ -80,7 +100,7 @@ p {
 }
 .card {
   padding: 0 auto;
-  background-color: #246fa8;
+  background-color: #3c3ccd;
 }
 
 .card-title {
@@ -90,7 +110,9 @@ p {
 .card-body {
   text-align: center;
   padding: -5px;
-  background-color: #3c3ccd;
+font-weight: 300;
+
+  background-color: linear-gradient(to right top, #0087fe, #1b81fa, #297bf5, #3475f1, #3d6fec);
 }
 
 .btn btn-light {
@@ -109,9 +131,3 @@ p {
   flex-wrap: wrap;
 }
 
-    .contact-btn
-    {
-        display: block;
-        margin: 0 auto;
-        width: 80px;
-    }
